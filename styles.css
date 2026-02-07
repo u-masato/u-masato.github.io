@@ -1,0 +1,92 @@
+:root {
+  --bg: #f5f7fb;
+  --surface: #ffffff;
+  --text: #1e2430;
+  --muted: #616b7c;
+  --line: #d7dfea;
+  --accent: #145be1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+  color: var(--text);
+  background: linear-gradient(180deg, #f9fbff 0%, var(--bg) 100%);
+}
+
+.container {
+  width: min(920px, 92%);
+  margin: 0 auto;
+  padding: 56px 0 80px;
+}
+
+.hero h1 {
+  margin: 6px 0 12px;
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.82rem;
+}
+
+.lead {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+section {
+  margin-top: 40px;
+}
+
+section h2 {
+  margin: 0 0 12px;
+  font-size: 1.15rem;
+}
+
+.card-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+
+.card {
+  display: block;
+  text-decoration: none;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 16px;
+  color: inherit;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.card:hover,
+.card:focus-visible {
+  transform: translateY(-2px);
+  border-color: #aec8ff;
+  box-shadow: 0 8px 24px rgba(26, 56, 124, 0.12);
+  outline: none;
+}
+
+.card-title {
+  display: block;
+  font-weight: 700;
+}
+
+.card-desc {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+}
