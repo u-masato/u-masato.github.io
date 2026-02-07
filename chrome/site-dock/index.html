@@ -6,7 +6,7 @@
     <title>site-dock | ホームページ</title>
     <meta
       name="description"
-      content="Chrome拡張機能 site-dock の紹介ページです。"
+      content="site-dock はサイトごとによく使うリンクを保存し、ワンボタンで一覧表示してすぐ移動できる Chrome 拡張機能です。"
     />
     <link rel="stylesheet" href="../../styles.css" />
     <style>
@@ -30,6 +30,11 @@
       .muted {
         color: #616b7c;
       }
+
+      .content h3 {
+        margin: 24px 0 8px;
+        font-size: 1rem;
+      }
     </style>
   </head>
   <body>
@@ -38,18 +43,55 @@
         <p class="eyebrow">Chrome Extension</p>
         <h1>site-dock</h1>
         <p class="lead">
-          よく使うサイトへ素早くアクセスするための Chrome 拡張機能です。
+          サイト（origin）ごとに「よく使うリンク」を保存し、拡張アイコンを押すだけで一覧からすぐ移動できる Chrome 拡張機能です。
         </p>
       </header>
 
       <section class="content" aria-labelledby="about-title">
-        <h2 id="about-title">概要</h2>
+        <h2 id="about-title">主な機能</h2>
+        <ul class="link-list">
+          <li>サイト（origin）ごとにリンクを保存</li>
+          <li>拡張アイコン（ワンボタン）で、そのサイトのリンク一覧を表示</li>
+          <li>リンクはボタンで選択して同一タブ遷移</li>
+          <li>リンク名の編集、不要なリンクの削除</li>
+        </ul>
+
+        <h3>想定ユースケース</h3>
+        <ul class="link-list">
+          <li>管理画面、ログアウト、ユーザー一覧などへの素早い移動</li>
+          <li>テストや検証で同じサイト内の特定ページを行き来する手間の削減</li>
+        </ul>
+
+        <h3>データの扱い</h3>
         <p class="muted">
-          site-dock は、日常的に使うWebサイトをまとめて管理し、ブラウジング時の移動を効率化するための拡張機能です。
+          保存するのは、ユーザーが登録した「リンク名」と「URL」のみです。外部サーバーへ送信せず、広告・解析・トラッキング目的の収集は行いません。Chrome同期（chrome.storage.sync）を有効にしている場合は、同期範囲内で複数端末に同期されることがあります。
         </p>
+
+        <h3>サポート</h3>
+        <p class="muted">連絡先: support@example.com</p>
+
+        <h3>Privacy / プライバシー</h3>
+        <p class="muted">
+          プライバシーポリシー:
+          <a href="https://u-masato.github.io/chrome/site-dock/privacy-policy/"
+            >https://u-masato.github.io/chrome/site-dock/privacy-policy/</a
+          >
+        </p>
+
+        <h3>Limited Use</h3>
+        <p class="muted">
+          site-dock は Chrome Web Store User Data Policy の Limited Use
+          要件に準拠し、ユーザーデータを中核機能の提供に必要な範囲でのみ使用します。
+        </p>
+
         <h2>リンク</h2>
         <ul class="link-list">
           <li><a href="privacy-policy/">プライバシーポリシー</a></li>
+          <li>
+            <a href="https://u-masato.github.io/chrome/site-dock/"
+              >site-dock ホーム（公開URL）</a
+            >
+          </li>
           <li><a href="../../index.html">ポータル（トップページ）</a></li>
         </ul>
       </section>
