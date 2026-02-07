@@ -85,6 +85,15 @@ section h2 {
   font-weight: 700;
 }
 
+.card-meta {
+  display: inline-block;
+  margin-bottom: 6px;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
 .card-desc {
   display: block;
   margin-top: 4px;
